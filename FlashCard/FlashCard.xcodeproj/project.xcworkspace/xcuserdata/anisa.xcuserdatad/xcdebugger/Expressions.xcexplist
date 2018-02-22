@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "DataService.setFavoritCrads(card:):DataService.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "selCard">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CardVC.setItems():CardVC.swift">
+      </ContextState>
+      <ContextState
+         contextName = "CardVC.initCards(collection:):CardVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cards">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
