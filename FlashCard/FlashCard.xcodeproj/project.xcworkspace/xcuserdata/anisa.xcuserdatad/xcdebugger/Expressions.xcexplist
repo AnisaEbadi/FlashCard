@@ -11,13 +11,54 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "CardVC.setItems():CardVC.swift">
+         contextName = "DataService.fetchCollections():DataService.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "resCards.count">
+            </PersistentString>
+            <PersistentString
+               value = "resCards">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DataService.seedPersistentStoreWithManagedObjectContext(_:):DataService.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "didSeedPersistentStore">
+            </PersistentString>
+            <PersistentString
+               value = "cards">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DataService.fetchData(colTilte:):DataService.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "col">
+            </PersistentString>
+            <PersistentString
+               value = "cardName">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "CardVC.initCards(collection:):CardVC.swift">
          <PersistentStrings>
             <PersistentString
                value = "cards">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CardVC.setItems():CardVC.swift">
+      </ContextState>
+      <ContextState
+         contextName = "DataService.init():DataService.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "collections">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

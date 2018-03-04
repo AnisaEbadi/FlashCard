@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17D47" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Cards" representedClassName=".Cards" parentEntity="Collections" syncable="YES" codeGenerationType="class">
+    <entity name="Cards" representedClassName="Cards" syncable="YES">
         <attribute name="imageName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="isFavorit" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="relCollections" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Collections" inverseName="relCards" inverseEntity="Collections" syncable="YES"/>
     </entity>
-    <entity name="Collections" representedClassName="Collections" syncable="YES" codeGenerationType="class">
+    <entity name="Collections" representedClassName="Collections" syncable="YES">
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="titleImage" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="relCards" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Cards" inverseName="relCollections" inverseEntity="Cards" spotlightIndexingEnabled="YES" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Cards" positionX="-918" positionY="-1665" width="128" height="90"/>
-        <element name="Collections" positionX="-900" positionY="-1620" width="128" height="75"/>
+        <element name="Cards" positionX="-18" positionY="0" width="128" height="103"/>
+        <element name="Collections" positionX="-234" positionY="180" width="128" height="88"/>
     </elements>
 </model>
