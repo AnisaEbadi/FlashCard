@@ -12,8 +12,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="AvenirNext.ttc">
-            <string>AvenirNext-Bold</string>
+        <array key="ArialBold.ttf">
+            <string>Arial-BoldMT</string>
         </array>
     </customFonts>
     <scenes>
@@ -210,7 +210,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="he4-98-0p0">
-                                <rect key="frame" x="0.0" y="183" width="375" height="302.5"/>
+                                <rect key="frame" x="0.0" y="202.5" width="375" height="262"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hqS-4D-QxH">
                                         <rect key="frame" x="56.5" y="0.0" width="262.5" height="262"/>
@@ -218,14 +218,14 @@
                                             <constraint firstAttribute="width" secondItem="hqS-4D-QxH" secondAttribute="height" multiplier="1:1" id="ISh-2G-ntt"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="left" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TCO-2N-46O" customClass="CardNameLbl" customModule="FlashCard" customModuleProvider="target">
-                                        <rect key="frame" x="175" y="282" width="25" height="20.5"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="نام" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="TCO-2N-46O" customClass="CardNameLbl" customModule="FlashCard" customModuleProvider="target">
+                                <rect key="frame" x="179" y="515" width="18.5" height="20.5"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -233,10 +233,12 @@
                             <constraint firstItem="BEL-hf-iAl" firstAttribute="top" secondItem="C6A-NA-Jc6" secondAttribute="top" constant="5" id="3bD-kf-pcG"/>
                             <constraint firstItem="he4-98-0p0" firstAttribute="centerY" secondItem="aTo-AF-mT0" secondAttribute="centerY" id="4cd-kj-wne"/>
                             <constraint firstItem="BEL-hf-iAl" firstAttribute="trailing" secondItem="C6A-NA-Jc6" secondAttribute="trailing" id="7TS-Le-0SC"/>
+                            <constraint firstItem="TCO-2N-46O" firstAttribute="top" secondItem="he4-98-0p0" secondAttribute="bottom" constant="50" id="CHK-bU-LIg"/>
                             <constraint firstItem="3ew-UW-sUj" firstAttribute="top" secondItem="C6A-NA-Jc6" secondAttribute="top" constant="10" id="OGZ-3I-aiD"/>
                             <constraint firstItem="he4-98-0p0" firstAttribute="centerX" secondItem="aTo-AF-mT0" secondAttribute="centerX" id="YDG-cX-bC3"/>
                             <constraint firstItem="C6A-NA-Jc6" firstAttribute="trailing" secondItem="3ew-UW-sUj" secondAttribute="trailing" constant="10" id="eSa-Lp-qSC"/>
                             <constraint firstItem="3ew-UW-sUj" firstAttribute="leading" secondItem="C6A-NA-Jc6" secondAttribute="leading" constant="10" id="guw-LQ-720"/>
+                            <constraint firstItem="TCO-2N-46O" firstAttribute="centerX" secondItem="aTo-AF-mT0" secondAttribute="centerX" id="hSW-gi-arN"/>
                             <constraint firstItem="hqS-4D-QxH" firstAttribute="width" secondItem="aTo-AF-mT0" secondAttribute="width" multiplier="0.7" id="jJa-Tv-09x"/>
                             <constraint firstItem="he4-98-0p0" firstAttribute="width" secondItem="aTo-AF-mT0" secondAttribute="width" id="n7K-8c-hIR"/>
                         </constraints>
@@ -253,7 +255,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TDF-Nu-0hn" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="aHC-Io-KTo" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1788.75" y="132.04225352112675"/>
+            <point key="canvasLocation" x="1788" y="131.78410794602701"/>
         </scene>
     </scenes>
     <resources>

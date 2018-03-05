@@ -20,6 +20,7 @@ extension Cards {
     @NSManaged public var imageName: String?
     @NSManaged public var isFavorit: Bool
     @NSManaged public var name: String?
+    @NSManaged public var voice: String?
     @NSManaged public var relCollections: Collections?
 
 }

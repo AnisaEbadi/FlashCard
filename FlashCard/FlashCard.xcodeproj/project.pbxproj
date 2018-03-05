@@ -24,13 +24,33 @@
 		88846AA0203EF8280097452D /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88846A9E203EF8280097452D /* Collection.swift */; };
 		88846AA1203EF8280097452D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88846A9F203EF8280097452D /* Card.swift */; };
 		88846AAE20416D6E0097452D /* CardsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 88846AAC20416D6E0097452D /* CardsModel.xcdatamodeld */; };
+		88FCCE3E204D27B400144DDF /* angur.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88FCCE3D204D27B300144DDF /* angur.mp3 */; };
+		88FCCE40204D27DA00144DDF /* asb.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88FCCE3F204D27DA00144DDF /* asb.mp3 */; };
+		88FCCE4A204D29F400144DDF /* sanjab.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88FCCE41204D29F100144DDF /* sanjab.mp3 */; };
+		88FCCE4B204D29F400144DDF /* gav.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88FCCE42204D29F200144DDF /* gav.mp3 */; };
+		88FCCE4C204D29F400144DDF /* gusfand.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88FCCE43204D29F200144DDF /* gusfand.mp3 */; };
+		88FCCE4D204D29F400144DDF /* sag.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88FCCE44204D29F200144DDF /* sag.mp3 */; };
+		88FCCE4E204D29F400144DDF /* gurekhar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88FCCE45204D29F200144DDF /* gurekhar.mp3 */; };
+		88FCCE4F204D29F400144DDF /* shir.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88FCCE46204D29F300144DDF /* shir.mp3 */; };
+		88FCCE50204D29F400144DDF /* gorbeh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88FCCE47204D29F300144DDF /* gorbeh.mp3 */; };
+		88FCCE51204D29F400144DDF /* fil.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88FCCE48204D29F300144DDF /* fil.mp3 */; };
+		88FCCE52204D29F400144DDF /* khargush.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88FCCE49204D29F400144DDF /* khargush.mp3 */; };
+		88FCCE5C204D2A3400144DDF /* gilas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88FCCE53204D2A3100144DDF /* gilas.mp3 */; };
+		88FCCE5D204D2A3400144DDF /* moz.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88FCCE54204D2A3200144DDF /* moz.mp3 */; };
+		88FCCE5E204D2A3400144DDF /* porteghal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88FCCE55204D2A3200144DDF /* porteghal.mp3 */; };
+		88FCCE5F204D2A3400144DDF /* golabi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88FCCE56204D2A3200144DDF /* golabi.mp3 */; };
+		88FCCE60204D2A3400144DDF /* sib.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88FCCE57204D2A3300144DDF /* sib.mp3 */; };
+		88FCCE61204D2A3400144DDF /* kiwi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88FCCE58204D2A3300144DDF /* kiwi.mp3 */; };
+		88FCCE62204D2A3400144DDF /* tutfarangi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88FCCE59204D2A3300144DDF /* tutfarangi.mp3 */; };
+		88FCCE63204D2A3400144DDF /* holu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88FCCE5A204D2A3300144DDF /* holu.mp3 */; };
+		88FCCE64204D2A3400144DDF /* zardalu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 88FCCE5B204D2A3400144DDF /* zardalu.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8825F16820443F0100712CC5 /* Collections+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Collections+CoreDataClass.swift"; path = "FlashCard/Services/Collections+CoreDataClass.swift"; sourceTree = "<group>"; };
-		8825F16920443F0100712CC5 /* Collections+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Collections+CoreDataProperties.swift"; path = "FlashCard/Services/Collections+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		8825F16A20443F0100712CC5 /* Cards+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Cards+CoreDataClass.swift"; path = "FlashCard/Services/Cards+CoreDataClass.swift"; sourceTree = "<group>"; };
-		8825F16B20443F0100712CC5 /* Cards+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Cards+CoreDataProperties.swift"; path = "FlashCard/Services/Cards+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8825F16820443F0100712CC5 /* Collections+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collections+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8825F16920443F0100712CC5 /* Collections+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collections+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8825F16A20443F0100712CC5 /* Cards+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cards+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8825F16B20443F0100712CC5 /* Cards+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cards+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8873450120394DBC00A591BE /* FlashCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8873450420394DBC00A591BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8873450620394DBC00A591BE /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
@@ -46,6 +66,26 @@
 		88846A9E203EF8280097452D /* Collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		88846A9F203EF8280097452D /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		88846AAD20416D6E0097452D /* CardsModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CardsModel.xcdatamodel; sourceTree = "<group>"; };
+		88FCCE3D204D27B300144DDF /* angur.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = angur.mp3; sourceTree = "<group>"; };
+		88FCCE3F204D27DA00144DDF /* asb.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = asb.mp3; sourceTree = "<group>"; };
+		88FCCE41204D29F100144DDF /* sanjab.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sanjab.mp3; sourceTree = "<group>"; };
+		88FCCE42204D29F200144DDF /* gav.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gav.mp3; sourceTree = "<group>"; };
+		88FCCE43204D29F200144DDF /* gusfand.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gusfand.mp3; sourceTree = "<group>"; };
+		88FCCE44204D29F200144DDF /* sag.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sag.mp3; sourceTree = "<group>"; };
+		88FCCE45204D29F200144DDF /* gurekhar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gurekhar.mp3; sourceTree = "<group>"; };
+		88FCCE46204D29F300144DDF /* shir.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shir.mp3; sourceTree = "<group>"; };
+		88FCCE47204D29F300144DDF /* gorbeh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gorbeh.mp3; sourceTree = "<group>"; };
+		88FCCE48204D29F300144DDF /* fil.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fil.mp3; sourceTree = "<group>"; };
+		88FCCE49204D29F400144DDF /* khargush.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = khargush.mp3; sourceTree = "<group>"; };
+		88FCCE53204D2A3100144DDF /* gilas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gilas.mp3; sourceTree = "<group>"; };
+		88FCCE54204D2A3200144DDF /* moz.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = moz.mp3; sourceTree = "<group>"; };
+		88FCCE55204D2A3200144DDF /* porteghal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = porteghal.mp3; sourceTree = "<group>"; };
+		88FCCE56204D2A3200144DDF /* golabi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = golabi.mp3; sourceTree = "<group>"; };
+		88FCCE57204D2A3300144DDF /* sib.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sib.mp3; sourceTree = "<group>"; };
+		88FCCE58204D2A3300144DDF /* kiwi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kiwi.mp3; sourceTree = "<group>"; };
+		88FCCE59204D2A3300144DDF /* tutfarangi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tutfarangi.mp3; sourceTree = "<group>"; };
+		88FCCE5A204D2A3300144DDF /* holu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = holu.mp3; sourceTree = "<group>"; };
+		88FCCE5B204D2A3400144DDF /* zardalu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zardalu.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +102,6 @@
 		887344F820394DBC00A591BE = {
 			isa = PBXGroup;
 			children = (
-				8825F16820443F0100712CC5 /* Collections+CoreDataClass.swift */,
-				8825F16920443F0100712CC5 /* Collections+CoreDataProperties.swift */,
-				8825F16A20443F0100712CC5 /* Cards+CoreDataClass.swift */,
-				8825F16B20443F0100712CC5 /* Cards+CoreDataProperties.swift */,
 				8873450320394DBC00A591BE /* FlashCard */,
 				8873450220394DBC00A591BE /* Products */,
 			);
@@ -82,6 +118,7 @@
 		8873450320394DBC00A591BE /* FlashCard */ = {
 			isa = PBXGroup;
 			children = (
+				88CB86DA204C5F3D0061F884 /* Voices */,
 				88846A9D203EF8280097452D /* Model */,
 				88734525203B022200A591BE /* Services */,
 				88734522203ABDA900A591BE /* View */,
@@ -126,10 +163,57 @@
 		88846A9D203EF8280097452D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8825F16820443F0100712CC5 /* Collections+CoreDataClass.swift */,
+				8825F16920443F0100712CC5 /* Collections+CoreDataProperties.swift */,
+				8825F16A20443F0100712CC5 /* Cards+CoreDataClass.swift */,
+				8825F16B20443F0100712CC5 /* Cards+CoreDataProperties.swift */,
 				88846A9E203EF8280097452D /* Collection.swift */,
 				88846A9F203EF8280097452D /* Card.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		888E1378204C99290055DB7B /* fruits */ = {
+			isa = PBXGroup;
+			children = (
+				88FCCE3D204D27B300144DDF /* angur.mp3 */,
+				88FCCE53204D2A3100144DDF /* gilas.mp3 */,
+				88FCCE56204D2A3200144DDF /* golabi.mp3 */,
+				88FCCE5A204D2A3300144DDF /* holu.mp3 */,
+				88FCCE58204D2A3300144DDF /* kiwi.mp3 */,
+				88FCCE54204D2A3200144DDF /* moz.mp3 */,
+				88FCCE55204D2A3200144DDF /* porteghal.mp3 */,
+				88FCCE57204D2A3300144DDF /* sib.mp3 */,
+				88FCCE59204D2A3300144DDF /* tutfarangi.mp3 */,
+				88FCCE5B204D2A3400144DDF /* zardalu.mp3 */,
+			);
+			path = fruits;
+			sourceTree = "<group>";
+		};
+		888E1379204C99320055DB7B /* animals */ = {
+			isa = PBXGroup;
+			children = (
+				88FCCE3F204D27DA00144DDF /* asb.mp3 */,
+				88FCCE48204D29F300144DDF /* fil.mp3 */,
+				88FCCE42204D29F200144DDF /* gav.mp3 */,
+				88FCCE47204D29F300144DDF /* gorbeh.mp3 */,
+				88FCCE45204D29F200144DDF /* gurekhar.mp3 */,
+				88FCCE43204D29F200144DDF /* gusfand.mp3 */,
+				88FCCE49204D29F400144DDF /* khargush.mp3 */,
+				88FCCE44204D29F200144DDF /* sag.mp3 */,
+				88FCCE41204D29F100144DDF /* sanjab.mp3 */,
+				88FCCE46204D29F300144DDF /* shir.mp3 */,
+			);
+			path = animals;
+			sourceTree = "<group>";
+		};
+		88CB86DA204C5F3D0061F884 /* Voices */ = {
+			isa = PBXGroup;
+			children = (
+				888E1379204C99320055DB7B /* animals */,
+				888E1378204C99290055DB7B /* fruits */,
+			);
+			path = Voices;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,9 +275,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88FCCE64204D2A3400144DDF /* zardalu.mp3 in Resources */,
+				88FCCE4D204D29F400144DDF /* sag.mp3 in Resources */,
+				88FCCE52204D29F400144DDF /* khargush.mp3 in Resources */,
+				88FCCE60204D2A3400144DDF /* sib.mp3 in Resources */,
+				88FCCE4B204D29F400144DDF /* gav.mp3 in Resources */,
+				88FCCE63204D2A3400144DDF /* holu.mp3 in Resources */,
+				88FCCE4C204D29F400144DDF /* gusfand.mp3 in Resources */,
+				88FCCE5E204D2A3400144DDF /* porteghal.mp3 in Resources */,
+				88FCCE61204D2A3400144DDF /* kiwi.mp3 in Resources */,
+				88FCCE50204D29F400144DDF /* gorbeh.mp3 in Resources */,
+				88FCCE40204D27DA00144DDF /* asb.mp3 in Resources */,
+				88FCCE3E204D27B400144DDF /* angur.mp3 in Resources */,
 				8873450F20394DBC00A591BE /* LaunchScreen.storyboard in Resources */,
+				88FCCE4F204D29F400144DDF /* shir.mp3 in Resources */,
+				88FCCE4A204D29F400144DDF /* sanjab.mp3 in Resources */,
+				88FCCE51204D29F400144DDF /* fil.mp3 in Resources */,
+				88FCCE5D204D2A3400144DDF /* moz.mp3 in Resources */,
 				8873450C20394DBC00A591BE /* Assets.xcassets in Resources */,
+				88FCCE5F204D2A3400144DDF /* golabi.mp3 in Resources */,
 				8873450A20394DBC00A591BE /* Main.storyboard in Resources */,
+				88FCCE5C204D2A3400144DDF /* gilas.mp3 in Resources */,
+				88FCCE62204D2A3400144DDF /* tutfarangi.mp3 in Resources */,
+				88FCCE4E204D29F400144DDF /* gurekhar.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

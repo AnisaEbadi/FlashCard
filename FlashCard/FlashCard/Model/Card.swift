@@ -15,6 +15,7 @@ struct Card {
     private(set) public var imageName: String
     private(set) public var name: String
     private(set) public var isFavorit: Bool
+    private(set) public var voice: String
     
     var Favorit: Bool{
         get{
@@ -25,9 +26,10 @@ struct Card {
         }
     }
     
-    init(imageName: String, name: String, isFavorit: Bool) {
+    init(imageName: String, name: String, isFavorit: Bool, voice: String) {
         self.imageName = imageName
         self.name = name
         self.isFavorit = isFavorit
+        self.voice = voice
     }
 }

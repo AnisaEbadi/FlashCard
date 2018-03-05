@@ -53,6 +53,11 @@
       </ContextState>
       <ContextState
          contextName = "CardVC.setItems():CardVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cards[index].voice">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "DataService.init():DataService.swift">

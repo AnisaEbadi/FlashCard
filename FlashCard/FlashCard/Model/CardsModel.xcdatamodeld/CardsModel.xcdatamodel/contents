@@ -4,6 +4,7 @@
         <attribute name="imageName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="isFavorit" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="voice" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="relCollections" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Collections" inverseName="relCards" inverseEntity="Collections" syncable="YES"/>
     </entity>
     <entity name="Collections" representedClassName="Collections" syncable="YES">
@@ -12,7 +13,7 @@
         <relationship name="relCards" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Cards" inverseName="relCollections" inverseEntity="Cards" spotlightIndexingEnabled="YES" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Cards" positionX="-18" positionY="0" width="128" height="103"/>
+        <element name="Cards" positionX="-18" positionY="0" width="128" height="120"/>
         <element name="Collections" positionX="-234" positionY="180" width="128" height="88"/>
     </elements>
 </model>
