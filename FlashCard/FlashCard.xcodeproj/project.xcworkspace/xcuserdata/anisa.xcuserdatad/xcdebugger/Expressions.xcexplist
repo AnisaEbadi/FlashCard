@@ -25,10 +25,22 @@
          contextName = "DataService.seedPersistentStoreWithManagedObjectContext(_:):DataService.swift">
          <PersistentStrings>
             <PersistentString
-               value = "didSeedPersistentStore">
+               value = "defautlVersion.value(forKey: &quot;version&quot;) as String">
             </PersistentString>
             <PersistentString
-               value = "cards">
+               value = "savedFavorits">
+            </PersistentString>
+            <PersistentString
+               value = "fv.name ">
+            </PersistentString>
+            <PersistentString
+               value = "cd.name">
+            </PersistentString>
+            <PersistentString
+               value = "collection.count">
+            </PersistentString>
+            <PersistentString
+               value = "version">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

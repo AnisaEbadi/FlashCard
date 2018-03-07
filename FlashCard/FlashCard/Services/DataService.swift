@@ -15,27 +15,28 @@ class DataService {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     let context : NSManagedObjectContext
     
+    private var collections = [Collections]()
     private var cards = [Cards]()
     private var card = [Card]()
 
     static let instance = DataService()
     
-    private var collections = [
+    private let collection = [
         Collection(title: "animals", titleImage: "animals_lbl"),
         Collection(title: "fruits", titleImage: "fruits_lbl"),
         Collection(title: "favorits", titleImage: "favorits_lbl")
     ]
     
     private let animales = [
-        Card(imageName: "cat", name: "گربه", isFavorit: false, voice: "gorbeh"),
+        //Card(imageName: "cat", name: "گربه", isFavorit: false, voice: "gorbeh"),
         Card(imageName: "dog", name: "سگ", isFavorit: false, voice: "sag"),
         Card(imageName: "horse", name: "اسب", isFavorit: false, voice: "asb"),
-        Card(imageName: "lion", name: "شیر", isFavorit: false, voice: "shir"),
+        //Card(imageName: "lion", name: "شیر", isFavorit: false, voice: "shir"),
         Card(imageName: "cow", name: "گاو", isFavorit: false, voice: "gav"),
-        Card(imageName: "sheep", name: "گوسفند", isFavorit: false, voice: "gusfand"),
+//        Card(imageName: "sheep", name: "گوسفند", isFavorit: false, voice: "gusfand"),
         Card(imageName: "elephant", name: "فیل", isFavorit: false, voice: "fil"),
-        Card(imageName: "squirrel", name: "سنجاب", isFavorit: false, voice: "sanjab"),
-        Card(imageName: "zebra", name: "گورخر", isFavorit: false, voice: "gurekhar"),
+//        Card(imageName: "squirrel", name: "سنجاب", isFavorit: false, voice: "sanjab"),
+//        Card(imageName: "zebra", name: "گورخر", isFavorit: false, voice: "gurekhar"),
         Card(imageName: "rabbit", name: "خرگوش", isFavorit: false, voice: "khargush")
     ]
     private let fruits = [
@@ -52,17 +53,21 @@ class DataService {
     ]
 
     private var favorits = [Card]()
+    private var savedFavorits = [Cards]()
 
     init() {
         context = appDelegate.persistentContainer.viewContext
         
         fetchCollections()
+        // ***
+        savedFavorits.removeAll()
+        savedFavorits = fetchFavorits()
     }
     
     // Fetch collection list from coredata
     func fetchCollections() {
-        var colTitle : String
-        var colTitleImage : String
+//        var colTitle : String
+//        var colTitleImage : String
         
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Collections")
         request.returnsObjectsAsFaults = false
@@ -71,12 +76,13 @@ class DataService {
             let result = try context.fetch(request)
             if result.count > 0 {
                 collections.removeAll()
-                for res in result as! [NSManagedObject]
-                {
-                    colTitle = res.value(forKey: "title") as! String
-                    colTitleImage = res.value(forKey: "titleImage") as! String
-                    collections.append(Collection(title: colTitle, titleImage: colTitleImage))
-                }
+                collections = result as! [Collections]
+//                for res in result as! [NSManagedObject]
+//                {
+//                    colTitle = res.value(forKey: "title") as! String
+//                    colTitleImage = res.value(forKey: "titleImage") as! String
+//                    collections.append(Collections(entity: colTitle, insertInto: colTitleImage))
+//                }
             }
         }catch{
             print(error)
@@ -161,12 +167,36 @@ class DataService {
     
     // **********************
     // call for first runnig app to fill the coredata
-    let didSeedPersistentStore = "didSeedPersistentStore"
+    let version = "V1"
+    
     
     func seedPersistentStoreWithManagedObjectContext(_ managedObjectContext: NSManagedObjectContext) {
-        guard !UserDefaults.standard.bool(forKey: didSeedPersistentStore) else { return }
+        let defautlVersion = UserDefaults()
+        if defautlVersion.value(forKey: "version") as? String != version{
+        // Delete info that saved before
+        // collections
+        let deleteFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Collections")
+        let deleteRequest = NSBatchDeleteRequest(fetchRequest: deleteFetch)
         
-        for col in collections {
+        do {
+            try context.execute(deleteRequest)
+            try context.save()
+        } catch {
+            print ("There was an error")
+        }
+        //cards
+        let deleteFetchCards = NSFetchRequest<NSFetchRequestResult>(entityName: "Cards")
+        let deleteRequestCards = NSBatchDeleteRequest(fetchRequest: deleteFetchCards)
+        
+        do {
+            try context.execute(deleteRequestCards)
+            try context.save()
+        } catch {
+            print ("There was an error")
+        }
+        
+        for col in collection {
+            
             // Create collection List
             let newCollection = NSEntityDescription.insertNewObject(forEntityName: "Collections", into: context)
             newCollection.setValue(col.title, forKey: "title")
@@ -176,13 +206,24 @@ class DataService {
             cards.removeAll()
             card = getCards(forCollectionTitle: col.title)
 
+            var isFavorit : Bool
             for cd in card {
+                isFavorit = cd.isFavorit
                 // Create card Item
                 let newCard = NSEntityDescription.insertNewObject(forEntityName: "Cards", into: context) as! Cards
 
                 newCard.setValue(cd.imageName, forKey: "imageName")
                 newCard.setValue(cd.name, forKey: "name")
-                newCard.setValue(cd.isFavorit, forKey: "isFavorit")
+                //newCard.setValue(cd.isFavorit, forKey: "isFavorit")
+                if savedFavorits.count > 0{
+                    for fv in savedFavorits{
+                        if fv.imageName == cd.imageName{
+                           isFavorit = true
+                            break
+                        }
+                    }
+                }
+                newCard.setValue(isFavorit, forKey: "isFavorit")
                 newCard.setValue(cd.voice, forKey: "voice")
                 newCard.setValue(newCollection, forKey: "relCollections")
                 cards.append(newCard)
@@ -198,13 +239,18 @@ class DataService {
         }
 
     // Update User Defaults
-    UserDefaults.standard.set(true, forKey: didSeedPersistentStore)
+    //UserDefaults.standard.set(true, forKey: didSeedPersistentStore)
+    defautlVersion.set(version, forKey: "version")
+        }
+        else {
+            return
+        }
     }
 
     
     func getCollections()->[Collection]
     {
-        return collections
+        return collection
     }
     
     // Get the cards from coredata
